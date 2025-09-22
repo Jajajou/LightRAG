@@ -1,0 +1,6 @@
+curl -X POST 'http://localhost:6333/collections/chunks/points/delete' \
+  -H 'Content-Type: application/json' -d '{"filter":{"must":[]}}'
+curl -X POST 'http://localhost:6333/collections/entities/points/delete' \
+  -H 'Content-Type: application/json' -d '{"filter":{"must":[]}}'
+curl -X POST 'http://localhost:6333/collections/relationships/points/delete' \
+  -H 'Content-Type: application/json' -d '{"filter":{"must":[]}}'

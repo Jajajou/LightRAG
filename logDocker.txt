@@ -1,0 +1,146 @@
+postgres | 2025-09-18 13:02:04.235 | 
+postgres | 2025-09-18 13:02:04.235 | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres | 2025-09-18 13:02:04.235 | 
+qdrant   | 2025-09-18 13:02:04.237 |            _                 _    
+qdrant   | 2025-09-18 13:02:04.237 |   __ _  __| |_ __ __ _ _ __ | |_  
+qdrant   | 2025-09-18 13:02:04.237 |  / _` |/ _` | '__/ _` | '_ \| __| 
+qdrant   | 2025-09-18 13:02:04.237 | | (_| | (_| | | | (_| | | | | |_  
+qdrant   | 2025-09-18 13:02:04.237 |  \__, |\__,_|_|  \__,_|_| |_|\__| 
+qdrant   | 2025-09-18 13:02:04.237 |     |_|                           
+qdrant   | 2025-09-18 13:02:04.237 | 
+qdrant   | 2025-09-18 13:02:04.237 | Version: 1.15.4, build: 20db14f8
+qdrant   | 2025-09-18 13:02:04.237 | Access web UI at http://localhost:6333/dashboard
+qdrant   | 2025-09-18 13:02:04.237 | 
+qdrant   | 2025-09-18 13:02:04.238 | 2025-09-18T06:02:04.237756Z  INFO storage::content_manager::consensus::persistent: Loading raft state from ./storage/raft_state.json    
+qdrant   | 2025-09-18 13:02:04.245 | 2025-09-18T06:02:04.244184Z  INFO qdrant: Distributed mode disabled    
+qdrant   | 2025-09-18 13:02:04.245 | 2025-09-18T06:02:04.244310Z  INFO qdrant: Telemetry reporting enabled, id: 9e56522e-e73a-4238-8961-51d7cb4f5ccf    
+qdrant   | 2025-09-18 13:02:04.286 | 2025-09-18T06:02:04.285912Z  INFO qdrant::actix: TLS disabled for REST API    
+qdrant   | 2025-09-18 13:02:04.286 | 2025-09-18T06:02:04.286154Z  INFO qdrant::actix: Qdrant HTTP listening on 6333    
+qdrant   | 2025-09-18 13:02:04.286 | 2025-09-18T06:02:04.286203Z  INFO actix_server::builder: starting 7 workers
+qdrant   | 2025-09-18 13:02:04.286 | 2025-09-18T06:02:04.286325Z  INFO actix_server::server: Actix runtime found; starting in Actix runtime
+qdrant   | 2025-09-18 13:02:04.286 | 2025-09-18T06:02:04.286364Z  INFO actix_server::server: starting service: "actix-web-service-0.0.0.0:6333", workers: 7, listening on: 0.0.0.0:6333
+postgres | 2025-09-18 13:02:04.291 | 2025-09-18 06:02:04.290 UTC [1] LOG:  starting PostgreSQL 16.10 (Debian 16.10-1.pgdg12+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+postgres | 2025-09-18 13:02:04.291 | 2025-09-18 06:02:04.290 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres | 2025-09-18 13:02:04.291 | 2025-09-18 06:02:04.290 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+qdrant   | 2025-09-18 13:02:04.291 | 2025-09-18T06:02:04.291085Z  INFO qdrant::tonic: Qdrant gRPC listening on 6334    
+qdrant   | 2025-09-18 13:02:04.292 | 2025-09-18T06:02:04.291115Z  INFO qdrant::tonic: TLS disabled for gRPC API    
+postgres | 2025-09-18 13:02:04.294 | 2025-09-18 06:02:04.294 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres | 2025-09-18 13:02:04.300 | 2025-09-18 06:02:04.300 UTC [28] LOG:  database system was shut down at 2025-09-18 05:59:53 UTC
+postgres | 2025-09-18 13:02:04.310 | 2025-09-18 06:02:04.309 UTC [1] LOG:  database system is ready to accept connections
+lightrag | 2025-09-18 13:02:08.961 | WARNING:root:>> Forcing workers=1 in uvicorn mode(Ignoring workers=2)
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | LightRAG log file: /app/lightrag.log
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 |     ╔══════════════════════════════════════════════════════════════╗
+lightrag | 2025-09-18 13:02:08.962 |     ║                 LightRAG Server v1.4.9/0224                  ║
+lightrag | 2025-09-18 13:02:08.962 |     ║         Fast, Lightweight RAG Server Implementation          ║
+lightrag | 2025-09-18 13:02:08.962 |     ╚══════════════════════════════════════════════════════════════╝
+lightrag | 2025-09-18 13:02:08.962 |     
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 📡 Server Configuration:
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Host: 0.0.0.0
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Port: 9621
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Workers: 1
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Timeout: 300
+lightrag | 2025-09-18 13:02:08.962 |     ├─ CORS Origins: *
+lightrag | 2025-09-18 13:02:08.962 |     ├─ SSL Enabled: False
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Ollama Emulating Model: lightrag:latest
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Log Level: INFO
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Verbose Debug: False
+lightrag | 2025-09-18 13:02:08.962 |     ├─ History Turns: 0
+lightrag | 2025-09-18 13:02:08.962 |     ├─ API Key: Not Set
+lightrag | 2025-09-18 13:02:08.962 |     └─ JWT Auth: Disabled
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 📂 Directory Configuration:
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Working Directory: /app/data/rag_storage
+lightrag | 2025-09-18 13:02:08.962 |     └─ Input Directory: /app/data/inputs
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 🤖 LLM Configuration:
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Binding: ollama
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Host: http://host.docker.internal:11434
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Model: qwen2.5:7b-instruct-q4_K_M
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Max Async for LLM: 4
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Summary Context Size: 12000
+lightrag | 2025-09-18 13:02:08.962 |     ├─ LLM Cache Enabled: True
+lightrag | 2025-09-18 13:02:08.962 |     └─ LLM Cache for Extraction Enabled: True
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 📊 Embedding Configuration:
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Binding: ollama
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Host: http://host.docker.internal:11434
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Model: bge-m3:latest
+lightrag | 2025-09-18 13:02:08.962 |     └─ Dimensions: 1024
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | ⚙️ RAG Configuration:
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Summary Language: English
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Entity Types: ['Person', 'Organization', 'Location', 'Event', 'Concept', 'Method', 'Content', 'Data', 'Artifact', 'NaturalObject']
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Max Parallel Insert: 2
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Chunk Size: 1200
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Chunk Overlap Size: 100
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Cosine Threshold: 0.2
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Top-K: 40
+lightrag | 2025-09-18 13:02:08.962 |     └─ Force LLM Summary on Merge: 8
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 💾 Storage Configuration:
+lightrag | 2025-09-18 13:02:08.962 |     ├─ KV Storage: PGKVStorage
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Vector Storage: QdrantVectorDBStorage
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Graph Storage: NetworkXStorage
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Document Status Storage: PGDocStatusStorage
+lightrag | 2025-09-18 13:02:08.962 |     └─ Workspace: -
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | ✨ Server starting up...
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 🌐 Server Access Information:
+lightrag | 2025-09-18 13:02:08.962 |     ├─ WebUI (local): http://localhost:9621
+lightrag | 2025-09-18 13:02:08.962 |     ├─ Remote Access: http://<your-ip-address>:9621
+lightrag | 2025-09-18 13:02:08.962 |     ├─ API Documentation (local): http://localhost:9621/docs
+lightrag | 2025-09-18 13:02:08.962 |     └─ Alternative Documentation (local): http://localhost:9621/redoc
+lightrag | 2025-09-18 13:02:08.962 | 
+lightrag | 2025-09-18 13:02:08.962 | 📝 Note:
+lightrag | 2025-09-18 13:02:08.962 |     Since the server is running on 0.0.0.0:
+lightrag | 2025-09-18 13:02:08.962 |     - Use 'localhost' or '127.0.0.1' for local access
+lightrag | 2025-09-18 13:02:08.962 |     - Use your machine's IP address for remote access
+lightrag | 2025-09-18 13:02:08.962 |     - To find your IP address:
+lightrag | 2025-09-18 13:02:08.962 |       • Windows: Run 'ipconfig' in terminal
+lightrag | 2025-09-18 13:02:08.962 |       • Linux/Mac: Run 'ifconfig' or 'ip addr' in terminal
+lightrag | 2025-09-18 13:02:08.962 |     
+lightrag | 2025-09-18 13:02:08.962 | INFO: Ollama LLM Options: {'num_ctx': 16384}
+lightrag | 2025-09-18 13:02:08.962 | INFO: Ollama Embedding Options: {}
+lightrag | 2025-09-18 13:02:08.963 | INFO: Reranking is disabled
+lightrag | 2025-09-18 13:02:10.006 | INFO: [_] Created new empty graph fiel: /app/data/rag_storage/graph_chunk_entity_relation.graphml
+lightrag | 2025-09-18 13:02:10.011 | 2025-09-18 06:02:10 - pipmaster.package_manager - INFO - Executing: /usr/local/bin/python -m pip install --upgrade qdrant-client
+lightrag | 2025-09-18 13:02:17.343 | 2025-09-18 06:02:17 - pipmaster.package_manager - INFO - Command succeeded: /usr/local/bin/python -m pip install --upgrade qdrant-client
+lightrag | 2025-09-18 13:02:18.033 | INFO: Started server process [1]
+lightrag | 2025-09-18 13:02:18.033 | INFO: Waiting for application startup.
+lightrag | 2025-09-18 13:02:18.076 | INFO: VECTOR extension ensured for PostgreSQL
+lightrag | 2025-09-18 13:02:18.078 | INFO: PostgreSQL, Connected to database at postgres:5432/lightrag without SSL
+lightrag | 2025-09-18 13:02:18.134 | INFO: PostgreSQL, Create vector indexs, type: HNSW
+lightrag | 2025-09-18 13:02:18.136 | INFO: HNSW vector index idx_lightrag_vdb_chunks_hnsw_cosine already exists on table LIGHTRAG_VDB_CHUNKS
+lightrag | 2025-09-18 13:02:18.137 | INFO: HNSW vector index idx_lightrag_vdb_entity_hnsw_cosine already exists on table LIGHTRAG_VDB_ENTITY
+lightrag | 2025-09-18 13:02:18.139 | INFO: HNSW vector index idx_lightrag_vdb_relation_hnsw_cosine already exists on table LIGHTRAG_VDB_RELATION
+lightrag | 2025-09-18 13:02:18.165 | INFO: chunk_id column already exists in LIGHTRAG_LLM_CACHE table
+lightrag | 2025-09-18 13:02:18.166 | INFO: cache_type column already exists in LIGHTRAG_LLM_CACHE table
+lightrag | 2025-09-18 13:02:18.166 | INFO: queryparam column already exists in LIGHTRAG_LLM_CACHE table
+lightrag | 2025-09-18 13:02:18.166 | INFO: mode column does not exist in LIGHTRAG_LLM_CACHE table
+lightrag | 2025-09-18 13:02:18.169 | INFO: Skipping migration: `content_vector` not found in LIGHTRAG_DOC_CHUNKS
+lightrag | 2025-09-18 13:02:18.173 | INFO: chunks_list column already exists in LIGHTRAG_DOC_STATUS table
+lightrag | 2025-09-18 13:02:18.176 | INFO: llm_cache_list column already exists in LIGHTRAG_DOC_CHUNKS table
+lightrag | 2025-09-18 13:02:18.191 | INFO: track_id column already exists in LIGHTRAG_DOC_STATUS table
+lightrag | 2025-09-18 13:02:18.192 | INFO: Index on track_id column already exists for LIGHTRAG_DOC_STATUS table
+lightrag | 2025-09-18 13:02:18.195 | INFO: metadata column already exists in LIGHTRAG_DOC_STATUS table
+lightrag | 2025-09-18 13:02:18.198 | INFO: error_msg column already exists in LIGHTRAG_DOC_STATUS table
+qdrant   | 2025-09-18 13:02:18.252 | 2025-09-18T06:02:18.251468Z  INFO actix_web::middleware::logger: 172.67.68.102 "GET /collections/entities/exists HTTP/1.1" 200 83 "-" "python-client/1.15.1 python/3.12.11" 0.002211    
+qdrant   | 2025-09-18 13:02:18.259 | 2025-09-18T06:02:18.259430Z  INFO storage::content_manager::toc::collection_meta_ops: Creating collection entities    
+qdrant   | 2025-09-18 13:02:18.379 | 2025-09-18T06:02:18.378705Z  INFO actix_web::middleware::logger: 172.67.68.102 "PUT /collections/entities HTTP/1.1" 200 71 "-" "python-client/1.15.1 python/3.12.11" 0.123623    
+lightrag | 2025-09-18 13:02:18.382 | INFO: [_] Qdrant collection 'entities' initialized successfully
+qdrant   | 2025-09-18 13:02:18.425 | 2025-09-18T06:02:18.425475Z  INFO actix_web::middleware::logger: 172.67.68.102 "GET /collections/relationships/exists HTTP/1.1" 200 80 "-" "python-client/1.15.1 python/3.12.11" 0.000273    
+qdrant   | 2025-09-18 13:02:18.427 | 2025-09-18T06:02:18.427098Z  INFO storage::content_manager::toc::collection_meta_ops: Creating collection relationships    
+qdrant   | 2025-09-18 13:02:18.482 | 2025-09-18T06:02:18.482503Z  INFO actix_web::middleware::logger: 172.67.68.102 "PUT /collections/relationships HTTP/1.1" 200 71 "-" "python-client/1.15.1 python/3.12.11" 0.055511    
+lightrag | 2025-09-18 13:02:18.486 | INFO: [_] Qdrant collection 'relationships' initialized successfully
+qdrant   | 2025-09-18 13:02:18.530 | 2025-09-18T06:02:18.530534Z  INFO actix_web::middleware::logger: 172.67.68.102 "GET /collections/chunks/exists HTTP/1.1" 200 83 "-" "python-client/1.15.1 python/3.12.11" 0.000366    
+qdrant   | 2025-09-18 13:02:18.532 | 2025-09-18T06:02:18.532722Z  INFO storage::content_manager::toc::collection_meta_ops: Creating collection chunks    
+qdrant   | 2025-09-18 13:02:18.593 | 2025-09-18T06:02:18.592999Z  INFO actix_web::middleware::logger: 172.67.68.102 "PUT /collections/chunks HTTP/1.1" 200 71 "-" "python-client/1.15.1 python/3.12.11" 0.060457    
+lightrag | 2025-09-18 13:02:18.594 | INFO: [_] Qdrant collection 'chunks' initialized successfully
+lightrag | 2025-09-18 13:02:18.594 | INFO: Application startup complete.
+lightrag | 2025-09-18 13:02:18.595 | INFO: Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)

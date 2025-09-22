@@ -22,7 +22,7 @@ build/
 # Exclude siles and folders
 *.yml
 .dockerignore
-Dockerfile
+# Dockerfile
 Makefile
 
 # Exclude other projects
