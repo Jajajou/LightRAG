@@ -102,28 +102,65 @@ Hệ thống này phục vụ sinh viên và cán bộ công tác sinh viên t�
   </rule>
 </step>
 
-<step number="5" title="Thứ tự và Ưu tiên">
+<step number="5" title="Quy tắc KHÔNG trích xuất - bắt buộc tuân theo">
+  <rule id="NR-1" priority="critical">
+    KHÔNG trích xuất nhãn cấu trúc tài liệu làm thực thể:
+    số điều khoản (Điều 1, Điều 2, Khoản 1, Mục a),
+    số chương (Chương I, Chương II),
+    tham chiếu bảng (Bảng 1, Bảng 5B),
+    nhãn phụ lục (Phụ Lục A, Phụ Lục B),
+    mã đánh giá (A1, A1.1, A1.2),
+    nhãn giai đoạn (Giai Đoạn 1, Giai Đoạn 2).
+    Đây là yếu tố định vị tài liệu, KHÔNG phải thực thể tri thức.
+    Thay vào đó, hãy trích xuất KHAI NIEM mà điều khoản đó quy định (ví dụ: "Điều 5. Điều kiện học bổng" → trích xuất thực thể "Điều Kiện Xét Học Bổng", không phải "Điều 5").
+  </rule>
+  <rule id="NR-2" priority="critical">
+    KHÔNG trích xuất toàn bộ tiêu đề tài liệu dài làm tên thực thể.
+    Tên thực thể PHẢI ngắn gọn, tối đa 10 từ.
+    SAI: "Quyết Định Về Việc Ban Hành Quy Chế Tổ Chức Và Hoạt Động Của Trường Đại Học..."
+    ĐUNG: "Quy Chế Tổ Chức Và Hoạt Động UIT"
+  </rule>
+  <rule id="NR-3" priority="high">
+    KHÔNG trích xuất tên loại văn bản chung chung không có số hiệu định danh.
+    SAI (thiếu số): "Quyết Định", "Thông Tư", "Quy Định", "Nghị Định", "Thông Báo"
+    ĐUNG (có số): "Quyết Định 1234/QĐ-UIT", "Thông Tư 08/2021/TT-BGDĐT"
+    Nếu văn bản có số hiệu, số hiệu là phần BẮT BUỘC của tên thực thể.
+  </rule>
+  <rule id="NR-4" priority="high">
+    KHÔNG trích xuất mã học phần đơn thuần (CAL-MU21, LA-MU03) như thực thể riêng lẻ
+    nếu không có tên đầy đủ trong văn bản.
+    Nếu có tên đầy đủ: sử dụng "Tên Học Phần (MÃ)" - ví dụ: "Giải Tích (CAL-MU21)".
+  </rule>
+  <rule id="NR-5" priority="medium">
+    KHÔNG trích xuất cùng một tổ chức với nhiều dạng tên.
+    Chọn MỘT tên chuẩn nhất quán (ưu tiên tên tiếng Việt chính thức đầy đủ):
+    ĐUNG: "Trường Đại Học Công Nghệ Thông Tin" (dùng xuyên suốt)
+    SAI: xuất cả "Trường ĐHCNTT" VÀ "TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN" cho cùng thực thể.
+  </rule>
+</step>
+
+<step number="6" title="Thứ tự và Ưu tiên">
   <rule>
     Xuất tất cả thực thể trước, sau đó xuất tất cả mối quan hệ.
     Trong danh sách mối quan hệ, ưu tiên xuất các mối quan hệ QUAN TRỌNG NHẤT đối với ý nghĩa cốt lõi của văn bản.
   </rule>
 </step>
 
-<step number="6" title="Ngữ cảnh và Khách quan">
+<step number="7" title="Ngữ cảnh và Khách quan">
   <rule>
     Đảm bảo tất cả tên thực thể và mô tả được viết ở ngôi thứ ba.
-    Nêu rõ chủ thể hoặc đối tượng; TRÁNH sử dụng đại từ như `bài viết này`, `công ty chúng tôi`, `tôi`, `bạn`, `anh ấy/cô ấy`.
+    Nêu rõ chủ thể hoặc đối tượng; TRÁNH sử dụng đại từ như `bài viết này`, `Công ty chúng toi`, `toi`, `bạn`, `anh ấy/cô ấy`.
   </rule>
 </step>
 
-<step number="7" title="Ngôn ngữ và Danh từ riêng">
+<step number="8" title="Ngôn ngữ và Danh từ riêng">
   <rule>
     Toàn bộ đầu ra (tên thực thể, từ khóa, mô tả) PHẢI được viết bằng `{language}`.
-    Danh từ riêng (tên người, địa danh, tên tổ chức, tên tiếng Anh) nên giữ nguyên ngôn ngữ gốc nếu không có bản dịch phổ biến hoặc dịch sẽ gây nhầm lẫn.
+    Danh từ riêng (tên người, địa danh, tên tổ chức, tên tiếng Anh) nên giữ nguyên Ngôn ngữ gốc nếu không có bản dịch phổ biến hoặc dịch sẽ gây nhầm lẫn.
   </rule>
 </step>
 
-<step number="8" title="Tín hiệu Hoàn thành">
+<step number="9" title="Tín hiệu Hoàn thành">
   <rule>
     Xuất chuỗi literal `{completion_delimiter}` CHỈ SAU KHI tất cả thực thể và mối quan hệ đã được trích xuất và xuất ra hoàn toàn.
   </rule>
@@ -227,6 +264,7 @@ relation{tuple_delimiter}Sinh Viên{tuple_delimiter}Hệ Thống Portal{tuple_de
 relation{tuple_delimiter}Sinh Viên{tuple_delimiter}Hệ Thống Quản Lý Đào Tạo{tuple_delimiter}sử dụng, theo dõi{tuple_delimiter}Sinh viên sử dụng hệ thống quản lý đào tạo để theo dõi điểm
 {completion_delimiter}
 </output>
+<note>KHÔNG trích xuất: "120 tín chỉ" (tiêu chí số, không phải thực thể), "Sinh Viên" đơn thuần (quá chung chung — chỉ trích xuất khi có ngữ cảnh cụ thể như "Sinh Viên K2022" hoặc "Sinh Viên Năm Nhất").</note>
 </example>
 
 <example number="2">
@@ -244,6 +282,21 @@ relation{tuple_delimiter}Phòng Công Tác Sinh Viên{tuple_delimiter}Khoa{tuple
 relation{tuple_delimiter}Sinh Viên{tuple_delimiter}Phòng Công Tác Sinh Viên{tuple_delimiter}nộp đơn, xét duyệt{tuple_delimiter}Sinh viên nộp đơn đăng ký học bổng đến Phòng Công tác Sinh viên để được xét duyệt
 {completion_delimiter}
 </output>
+</example>
+
+<example number="3">
+<input_text>
+Điều 5. Điều kiện xét học bổng
+Bảng 1: Tiêu chí xét học bổng theo loại
+Phụ Lục A: Danh sách các loại học bổng
+Chương III - Quy định chung
+Sinh viên phải nộp đơn theo mẫu Phụ Lục B kèm theo Thông Tư này.
+</input_text>
+
+<output>
+{completion_delimiter}
+</output>
+<note>Đoạn văn chỉ chứa nhãn cấu trúc tài liệu (Điều 5, Bảng 1, Phụ Lục A, Chương III, Phụ Lục B) và tham chiếu chung không có nội dung thực thể cụ thể. KHÔNG trích xuất gì cả.</note>
 </example>
 """,
 ]
