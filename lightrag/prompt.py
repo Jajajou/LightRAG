@@ -170,13 +170,6 @@ Hệ thống này phục vụ sinh viên và cán bộ công tác sinh viên t�
 <examples>
 {examples}
 </examples>
-
-<input>
-<entity_types>{entity_types}</entity_types>
-<text>
-{input_text}
-</text>
-</input>
 """
 
 PROMPTS["entity_extraction_user_prompt"] = """<task>
@@ -200,6 +193,13 @@ Trích xuất thực thể và mối quan hệ từ văn bản đầu vào cần
   Đảm bảo ngôn ngữ đầu ra là {language}. Danh từ riêng (tên người, địa danh, tên tổ chức) PHẢI giữ nguyên ngôn ngữ gốc và không được dịch.
 </instruction>
 </instructions>
+
+<input>
+<entity_types>{entity_types}</entity_types>
+<text>
+{input_text}
+</text>
+</input>
 
 <output>
 """
