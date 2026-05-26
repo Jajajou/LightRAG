@@ -51,6 +51,7 @@ from lightrag.api.routers.document_routes import (
 )
 from lightrag.api.routers.query_routes import create_query_routes
 from lightrag.api.routers.graph_routes import create_graph_routes
+from lightrag.utils_clause import clause_aware_chunking_func
 from lightrag.api.routers.ollama_api import OllamaAPI
 
 from lightrag.utils import logger, set_verbose_debug
@@ -1053,6 +1054,7 @@ def create_app(args):
             summary_context_size=args.summary_context_size,
             chunk_token_size=int(args.chunk_size),
             chunk_overlap_token_size=int(args.chunk_overlap_size),
+            chunking_func=clause_aware_chunking_func,
             llm_model_kwargs=create_llm_model_kwargs(
                 args.llm_binding, args, llm_timeout
             ),
